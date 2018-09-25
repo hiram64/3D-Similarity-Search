@@ -87,7 +87,7 @@ def main():
                 np.savez_compressed(modeleval_out_dir, idx=idx, sims=sims, encoded=encoded, decoded=decoded)
 
     # visualize encoded data with t-SNE
-    visualize_tsne(encoded, y_test)
+    # visualize_tsne(encoded, y_test)
 
     # add self-index as the first column
     self_idx = np.arange(encoded.shape[0]).reshape((encoded.shape[0], 1))
@@ -100,7 +100,7 @@ def main():
     visualize(x_test, y_test, idx[sample_idx])
 
     # visualize input and its decoded data
-    visualize_3d_iodata(x_test[sample_idx], decoded[sample_idx], y_test[sample_idx])
+    # visualize_3d_iodata(x_test[sample_idx], decoded[sample_idx], y_test[sample_idx])
 
     # calculate average precision
     ap = calculate_average_precision(y_test, idx[sample_idx], sims[sample_idx], num_search_sample)
