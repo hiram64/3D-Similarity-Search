@@ -3,7 +3,10 @@
 This repository is for searching similar voxel data based on features compressed by 3D Convolutional Autoencoder.
 
 ## Dependencies
-tensorflow, scikit-learn, matplotlib
+tensorflow, scikit-learn, numpy, matplotlib
+
+My test environment:
+Python3.6, tensorflow-gpu==1.12.0, scikit-learn==0.20.3, numpy==1.16.2, matplotlib==3.0.3
 
 ## How to use
 ### 1. Prepare directory
