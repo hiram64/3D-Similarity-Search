@@ -52,7 +52,7 @@ def main():
     config.gpu_options.allow_growth = True
     saver = tf.train.Saver(max_to_keep=10)
 
-    with tf.Session() as sess:
+    with tf.Session(config=config) as sess:
         writer = tf.summary.FileWriter(logdir, sess.graph)
         sess.run(tf.global_variables_initializer())
 
